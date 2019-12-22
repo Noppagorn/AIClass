@@ -37,10 +37,15 @@ if __name__ == '__main__':
     X_test = data_array[:,0:29]
     Y_test = data_array[:,29]
 
+    #print(X[-1])
+
+    print(X[:,28:29])
     labelencoder_y = LabelEncoder()
-    #X = labelencoder_y.fit(X)
-    Y = labelencoder_y.fit_transform(Y)
-    Y_test = labelencoder_y.fit_transform(Y_test)
+    #X[:,28:29] = labelencoder_y.fit_transform(X[:,28,29])
+    #print(Y)
+    #Y = labelencoder_y.fit_transform(Y)
+    #print(Y)
+    #Y_test = labelencoder_y.fit_transform(Y_test)
 
     X_train,X_val,Y_train,Y_val = train_test_split(X,Y,test_size=0.2,random_state=1)
 
