@@ -1,5 +1,10 @@
+from subprocess import check_call
+
+import pydotplus
+from IPython.core.display import Image
 from pandas import read_csv
 from sklearn import metrics
+from sklearn.externals.six import StringIO
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder
 from sklearn.ensemble import RandomForestClassifier
@@ -9,7 +14,7 @@ from sklearn.metrics import accuracy_score
 from sklearn.metrics import classification_report
 import os
 
-from sklearn.tree import DecisionTreeClassifier
+from sklearn.tree import DecisionTreeClassifier, export_graphviz
 
 
 def read_from_CSV(url):
@@ -68,6 +73,15 @@ if __name__ == '__main__':
     print(confusion_matrix(Y_test, Y_pred))
 
     print("Accuracy:", metrics.accuracy_score(Y_test, Y_pred))
+
+    #try to creat node
+    dot_data = StringIO()
+    export_graphviz(clf,out_file='tree_limited.dot',filled=True,rounded=True,special_characters=True)
+    graph = pydotplus.graph_from_dot_data(dot_data.getvalue())
+    check_call(['dot', '-Tpng', dirpath + "/tree_limited.dot", '-o', 'tree_limited.png'])
+    Image(filename = dirpath + '/tree_limited.png')
+
+
     # classifier = RandomForestClassifier()
     # classifier = classifier.fit(X_train,Y_train)
     # predicted = classifier.predict(X_test)
