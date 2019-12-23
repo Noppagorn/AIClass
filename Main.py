@@ -1,4 +1,5 @@
 from pandas import read_csv
+from sklearn import metrics
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder
 from sklearn.ensemble import RandomForestClassifier
@@ -7,6 +8,9 @@ from sklearn.metrics import confusion_matrix
 from sklearn.metrics import accuracy_score
 from sklearn.metrics import classification_report
 import os
+
+from sklearn.tree import DecisionTreeClassifier
+
 
 def read_from_CSV(url):
     dirpart = os.path.dirname(__file__)
@@ -25,39 +29,51 @@ def detail(dataSet):
     print(dataSet.groupby("class").size())
 if __name__ == '__main__':
     print("Main")
-    dataSet = read_from_CSV("allhyper2Data.csv")
-    testSet = read_from_CSV("allhyper2test.csv")
+    dirpath = os.path.dirname(__file__)
+    dataSet = read_csv(dirpath + "/DataSet/" + "allhyper2Data.csv")
+    testSet = read_csv(dirpath + "/DataSet/" + "allhyper2test.csv")
     #detail(dataSet)
     data_array = dataSet.values
     test_array = testSet.values
-
+    #X = X.astype("float")
     X = data_array[:,0:29]
     Y = data_array[:,29]
+    #X = X.astype("float64")
+    #Y = Y.astype("float64")
+
+    #print(X)
+    #print(Y)
 
     X_test = data_array[:,0:29]
     Y_test = data_array[:,29]
 
     #print(X[-1])
 
-    print(X[:,28:29])
+    #print(X[:,28:29])
     labelencoder_y = LabelEncoder()
     #X[:28,29] = labelencoder_y.fit_transform(X[:,28,29])
 
-
     #X[:,28:29] = labelencoder_y.fit_transform(X[:,28,29])
     #print(Y)
-    #Y = labelencoder_y.fit_transform(Y)
+    Y = labelencoder_y.fit_transform(Y)
     #print(Y)
-    #Y_test = labelencoder_y.fit_transform(Y_test)
+    Y_test = labelencoder_y.fit_transform(Y_test)
 
     X_train,X_val,Y_train,Y_val = train_test_split(X,Y,test_size=0.2,random_state=1)
 
-    classifier = RandomForestClassifier()
-    classifier = classifier.fit(X_train,Y_train)
-    predicted = classifier.predict(X_test)
+    clf = DecisionTreeClassifier()
+    clf = clf.fit(X_train,Y_train)
+    Y_pred = clf.predict(X_test)
 
-    print("Confusion Matrix : ")
-    print(confusion_matrix(Y_test,predicted))
-    print("Accuracy Score : ",accuracy_score(Y_test,predicted))
-    print("Report : ")
-    print(classification_report(Y_test,predicted))
+    print(confusion_matrix(Y_test, Y_pred))
+
+    print("Accuracy:", metrics.accuracy_score(Y_test, Y_pred))
+    # classifier = RandomForestClassifier()
+    # classifier = classifier.fit(X_train,Y_train)
+    # predicted = classifier.predict(X_test)
+    #
+    # print("Confusion Matrix : ")
+    # print(confusion_matrix(Y_test,predicted))
+    # print("Accuracy Score : ",accuracy_score(Y_test,predicted))
+    # print("Report : ")
+    # print(classification_report(Y_test,predicted))
