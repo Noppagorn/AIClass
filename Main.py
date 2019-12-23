@@ -66,7 +66,7 @@ if __name__ == '__main__':
 
     X_train,X_val,Y_train,Y_val = train_test_split(X,Y,test_size=0.2,random_state=1)
 
-    clf = DecisionTreeClassifier()
+    clf = DecisionTreeClassifier(criterion="entropy", max_depth=3)
     clf = clf.fit(X_train,Y_train)
     Y_pred = clf.predict(X_test)
 
