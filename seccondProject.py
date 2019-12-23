@@ -2,10 +2,10 @@ import os
 import re
 import numpy as np
 from pandas import read_csv
-from sklearn.preprocessing import OneHotEncoder, LabelEncoder
+from sklearn import preprocessing
 
 if __name__ == '__main__':
-    url = "allhyper.test"
+    url = "allhyper.data"
     parth = os.path.dirname(__file__)
     names = ["age","sex","on_thyroxine","query_thyroxine"
              ,"antithyroid","sick","pregnant","thyroid_surgery"
@@ -23,21 +23,11 @@ if __name__ == '__main__':
     dataset = dataset.replace("t",1)
     dataset = dataset.replace('f',0)
     dataset = dataset.replace("?",np.nan)
+    le = preprocessing.LabelEncoder()
+    dataset['referral'] = le.fit_transform(dataset['referral'])
 
     print(dataset.groupby("referral").size())
 
-    #fit = dataset.apply(lambda x: dataset.fit_transform(x))
-    #OneHotEncoder().fit_transform(dataset)
-    labelencoder_y = LabelEncoder()
-    # X[] = labelencoder_y.fit(X[-1])
-
-    print(dataset[:,25:26])
-    # for i,row in enumerate(dataset.values):
-    #     sex = row[1]
-    #     if (sex == "M"):
-    #         row[1] = 0
-    #     else:
-    #         row[1] = 1
     #option 2
     #df['team'] = df['team'].apply(lambda x: re.sub(r'[\n\r]*', '', str(x)))
-    dataset.to_csv("DataSet/allhyper2test.csv",encoding="utf-8")
+    dataset.to_csv("DataSet/allhyper2Data.csv",encoding="utf-8")

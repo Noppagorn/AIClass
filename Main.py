@@ -41,6 +41,9 @@ if __name__ == '__main__':
 
     print(X[:,28:29])
     labelencoder_y = LabelEncoder()
+    #X[:28,29] = labelencoder_y.fit_transform(X[:,28,29])
+
+
     #X[:,28:29] = labelencoder_y.fit_transform(X[:,28,29])
     #print(Y)
     #Y = labelencoder_y.fit_transform(Y)
