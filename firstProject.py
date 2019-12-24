@@ -22,23 +22,9 @@ if __name__ == '__main__':
     url = "https://raw.githubusercontent.com/jbrownlee/Datasets/master/iris.csv"
     names = ['sepal-length', 'sepal-width', 'petal-length', 'petal-width', 'class']
     dataset = read_csv(url, names=names)
-    #print(dataset.shape) Show amount of data and attribute
 
     print(dataset.describe())
 
-    #print(dataset.groupby("class").size()) # group by names
-
-    # box and whisker plots
-    #dataset.plot(kind='box', subplots=True, layout=(2, 2), sharex=False, sharey=False)
-    #pyplot.show()
-
-    #dataset.hist()
-    #pyplot.show()
-
-    #scatter_matrix(dataset)
-    #pyplot.show()
-
-    # validation dataset
     array = dataset.values
     X = array[:,0:4]
     Y = array[:,4]
