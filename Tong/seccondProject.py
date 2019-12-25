@@ -5,7 +5,7 @@ from pandas import read_csv
 from sklearn import preprocessing
 
 if __name__ == '__main__':
-    url = "allhyper.test"
+    url = "allhyper.data"
     parth = os.path.dirname(__file__)
     names = ["age","sex","on_thyroxine","query_thyroxine"
              ,"antithyroid","sick","pregnant","thyroid_surgery"
@@ -18,7 +18,7 @@ if __name__ == '__main__':
 
     #option 1
     dataset['class'] = [re.sub(r'\.\|.*','', str(x)) for x in dataset['class']]
-    dataset.loc[dataset['sex'] == "M", 'sex'] = 0
+    dataset.loc[dataset['sex'] == "M", 'sex'] = 1
     dataset.loc[dataset['sex'] == "F", 'sex'] = 0
     dataset = dataset.replace("t",1)
     dataset = dataset.replace('f',0)
@@ -30,4 +30,4 @@ if __name__ == '__main__':
 
     #option 2
     #df['team'] = df['team'].apply(lambda x: re.sub(r'[\n\r]*', '', str(x)))
-    dataset.to_csv("DataSet/allhyper2Test.csv",encoding="utf-8")
+    dataset.to_csv("DataSet/allhyper2Data.csv",encoding="utf-8")
