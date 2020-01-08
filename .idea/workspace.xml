@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a46b9a88-cf50-4504-95e6-5adc039c7bc5" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/Tong/KnearestNeighbors.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fon/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tong/DataSet/allhyper2Data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Tong/DataSet/allhyper2Data.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tong/DataSet/allhyper2Test.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Tong/DataSet/allhyper2Test.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tong/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tong/Main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tong/preProcessing.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tong/preProcessing.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -30,10 +26,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Main.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Main.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Tong/Main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="122">
+            <state>
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="KnearestNeighbors.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Tong/KnearestNeighbors.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="80">
               <caret line="162" column="44" selection-start-line="162" selection-start-column="44" selection-end-line="162" selection-end-column="44" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
@@ -73,8 +80,8 @@
       <file leaf-file-name="Main.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Tar/Main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="17" column="68" selection-start-line="17" selection-start-column="68" selection-end-line="17" selection-end-column="68" />
+            <state relative-caret-position="-547">
+              <caret line="27" column="51" selection-start-line="27" selection-start-column="51" selection-end-line="27" selection-end-column="51" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -110,6 +117,7 @@
         <option value="$PROJECT_DIR$/main/Main.py" />
         <option value="$PROJECT_DIR$/Tong/preProcessing.py" />
         <option value="$PROJECT_DIR$/Tong/Main.py" />
+        <option value="$PROJECT_DIR$/Tong/KnearestNeighbors.py" />
       </list>
     </option>
   </component>
@@ -146,13 +154,12 @@
             <path>
               <item name="AIClass" type="b2602c69:ProjectViewProjectNode" />
               <item name="AIClass" type="462c0819:PsiDirectoryNode" />
-              <item name="Tong" type="462c0819:PsiDirectoryNode" />
+              <item name="Tar" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="AIClass" type="b2602c69:ProjectViewProjectNode" />
               <item name="AIClass" type="462c0819:PsiDirectoryNode" />
               <item name="Tong" type="462c0819:PsiDirectoryNode" />
-              <item name="DataSet" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -185,8 +192,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Main (4)">
-    <configuration name="Main (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.KnearestNeighbors">
+    <configuration name="KnearestNeighbors" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="AIClass" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -194,11 +201,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Kukik" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Tong" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Kukik/Main.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Tong/KnearestNeighbors.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -277,19 +284,19 @@
       <option name="MODULE_MODE" value="false" />
     </configuration>
     <list>
-      <item itemvalue="Python.Main (1)" />
       <item itemvalue="Python.Main (2)" />
       <item itemvalue="Python.Main (3)" />
       <item itemvalue="Python.Main (4)" />
       <item itemvalue="Python.preProcessing" />
+      <item itemvalue="Python.KnearestNeighbors" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.KnearestNeighbors" />
         <item itemvalue="Python.Main (4)" />
+        <item itemvalue="Python.Main (3)" />
         <item itemvalue="Python.preProcessing" />
         <item itemvalue="Python.Main (2)" />
-        <item itemvalue="Python.Main (3)" />
-        <item itemvalue="Python.Main (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -313,7 +320,7 @@
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25370803" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.5051546" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2766323" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.36941582" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -338,9 +345,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Tong/DataSet/allhyper.test">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/Tong/DataSet/allhyper.names">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
@@ -540,16 +544,6 @@
     <entry file="file://$PROJECT_DIR$/main/tree_image.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Tar/Main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="17" column="68" selection-start-line="17" selection-start-column="68" selection-end-line="17" selection-end-column="68" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main/Main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
@@ -622,9 +616,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Tar/Main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-547">
+          <caret line="27" column="51" selection-start-line="27" selection-start-column="51" selection-end-line="27" selection-end-column="51" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Tong/Main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
+        <state>
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tong/KnearestNeighbors.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
           <caret line="162" column="44" selection-start-line="162" selection-start-column="44" selection-end-line="162" selection-end-column="44" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
