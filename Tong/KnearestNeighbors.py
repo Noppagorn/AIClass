@@ -128,7 +128,9 @@ class ModelClassification:
         }
         return wordDict.get(x)
 
-
+def my_weight(weight):
+    print(weight)
+    return weight * 100000
 if __name__ == '__main__':
     print("Main")
     dirpath = os.path.dirname(__file__)
@@ -142,14 +144,14 @@ if __name__ == '__main__':
     dataSet = read_csv(dirpath + "/DataSet/" + "allhyper2Data.csv",header=0)
     testSet = read_csv(dirpath + "/DataSet/" + "allhyper2Test.csv",header=0)
     #print(dataSet.head(5))
-    print(dataSet.info())
-    print(testSet.info())
+    #print(dataSet.info())
+    #print(testSet.info())
     data_array = dataSet.values
     test_array = testSet.values
 
     X = data_array[:, 0:29]
     Y = data_array[:, 29]
-    print(dataSet.groupby("class").size())
+    #print(dataSet.groupby("class").size())
 
     X_test = test_array[:, 0:29]
     Y_test = test_array[:, 29]
@@ -160,7 +162,7 @@ if __name__ == '__main__':
     # Y_test = labelencoder_y.fit_transform(Y_test)
 
     #clf = DecisionTreeClassifier(criterion="entropy", max_depth=2)
-    clf = KNeighborsClassifier(n_neighbors=5)
+    clf = KNeighborsClassifier(n_neighbors=5,weights="distance")
     clf.fit(X, Y)
     #clf = clf.fit(X, Y)
     Y_pred = clf.predict(X_test)
