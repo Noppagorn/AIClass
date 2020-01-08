@@ -2,14 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a46b9a88-cf50-4504-95e6-5adc039c7bc5" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/Fon/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tong/DataSet/allhyper2Data.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tong/DataSet/allhyper2Test.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fon/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tong/DataSet/allhyper2Data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Tong/DataSet/allhyper2Data.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tong/DataSet/allhyper2Test.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Tong/DataSet/allhyper2Test.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tong/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tong/Main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tong/seccondProject.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tong/preProcessing.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tong/tree_limited.dot" beforeDir="false" afterPath="$PROJECT_DIR$/Tong/tree_limited.dot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tong/tree_limited.png" beforeDir="false" afterPath="$PROJECT_DIR$/Tong/tree_limited.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tong/preProcessing.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tong/preProcessing.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,11 +18,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="preProcessing.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="preProcessing.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Tong/preProcessing.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="46" column="37" selection-start-line="46" selection-start-column="37" selection-end-line="46" selection-end-column="37" />
+            <state relative-caret-position="960">
+              <caret line="52" column="4" selection-start-line="52" selection-start-column="4" selection-end-line="52" selection-end-column="4" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -32,13 +30,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Main.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Main.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Tong/Main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-8">
-              <caret line="61" column="64" selection-start-line="61" selection-start-column="64" selection-end-line="61" selection-end-column="64" />
+            <state relative-caret-position="122">
+              <caret line="162" column="44" selection-start-line="162" selection-start-column="44" selection-end-line="162" selection-end-column="44" />
               <folding>
-                <element signature="e#0#33#0" expanded="true" />
+                <element signature="e#0#9#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -60,9 +58,7 @@
       </file>
       <file leaf-file-name="allhyper.data" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main/allhyper.data">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-180" />
-          </provider>
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file leaf-file-name="parsers.py" pinned="false" current-in-tab="false">
@@ -139,6 +135,17 @@
             <path>
               <item name="AIClass" type="b2602c69:ProjectViewProjectNode" />
               <item name="AIClass" type="462c0819:PsiDirectoryNode" />
+              <item name="Kukik" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AIClass" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AIClass" type="462c0819:PsiDirectoryNode" />
+              <item name="Kukik" type="462c0819:PsiDirectoryNode" />
+              <item name="DataSet" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AIClass" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AIClass" type="462c0819:PsiDirectoryNode" />
               <item name="Tong" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -156,7 +163,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="?&#9;null&#9;null" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../LAbMulttmedia" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.maddyhome.idea.vim.ui.VimEmulationConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -306,12 +313,11 @@
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25370803" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3298969" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32302406" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.5051546" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.36941582" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.0154639175" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -320,6 +326,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3298969" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -331,9 +338,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Tong/DataSet/allhyper2.csv">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/Tong/DataSet/allhyper.test">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -490,20 +494,6 @@
     <entry file="file://$PROJECT_DIR$/Tong/tree_limited.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Tong/DataSet/allhyper2Test.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="31" selection-start-column="31" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Kukik/DataSet/cmc.data">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Tar/DataSet/Autism-Adult-Data.arff">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -564,9 +554,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
           <caret line="74" column="1" selection-start-line="74" selection-end-line="74" selection-end-column="2" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -574,9 +561,7 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/main/allhyper.data">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-180" />
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Tong/DataSet/allhyper.csv">
       <provider selected="true" editor-type-id="text-editor">
@@ -606,20 +591,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Tong/Main.py">
+    <entry file="file://$PROJECT_DIR$/Tong/DataSet/allhyper2Test.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8">
-          <caret line="61" column="64" selection-start-line="61" selection-start-column="64" selection-end-line="61" selection-end-column="64" />
-          <folding>
-            <element signature="e#0#33#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-6060">
+          <caret column="31" selection-start-column="31" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Tong/preProcessing.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="46" column="37" selection-start-line="46" selection-start-column="37" selection-end-line="46" selection-end-column="37" />
+        <state relative-caret-position="960">
+          <caret line="52" column="4" selection-start-line="52" selection-start-column="4" selection-end-line="52" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Kukik/DataSet/cmc.data">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python/Python37/Lib/site-packages/sklearn/model_selection/_split.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="627">
+          <caret line="656" selection-start-line="656" selection-end-line="656" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tong/Main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="162" column="44" selection-start-line="162" selection-start-column="44" selection-end-line="162" selection-end-column="44" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>

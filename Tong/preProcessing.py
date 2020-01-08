@@ -44,6 +44,7 @@ def handleCSV(url,outName):
     dataset = dataset.replace("?",-1)
     print(dataset.groupby("referral").size())
     dataset['referral'] = [ mapTransfromRef(x) for x in dataset['referral']]
+    dataset = dataset.astype(np.float64)
     dataset = dataset.set_index("age")
     #le = preprocessing.LabelEncoder()
     #dataset['referral'] = le.fit_transform(dataset['referral'])
